@@ -2,7 +2,7 @@
 
 Ukrainian fine-tunes of Google's Gemma 4 E2B and E4B for **Dykan**, an offline school assistant for students in Ukraine. The model runs entirely on the phone: it explains and solves school and exam (ZNO/NMT) tasks, reads photos of tasks, and carries out multi-step requests with tools.
 
-Models on Hugging Face: [rntdev1/dykan](https://huggingface.co/rntdev1/dykan)
+Models on Hugging Face: [rntdev/dykan](https://huggingface.co/rntdev/dykan)
 
 ## Results
 
