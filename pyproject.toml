@@ -1,0 +1,33 @@
+[project]
+name = "dykan-lm"
+version = "0.1.0"
+description = "Ukrainian Gemma 4 (E2B/E4B) fine-tunes for Dykan, an offline school assistant"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.11,<3.14"
+dependencies = []
+
+[project.optional-dependencies]
+# Training and evaluation on a GPU.
+gpu = [
+    "transformers>=5.10.1",
+    "torch",
+    "accelerate",
+    "peft>=0.19.0",
+]
+
+# Local chat on Apple silicon (demo/chat.py).
+mac = [
+    "mlx-lm>=0.32",
+    "mlx-vlm>=0.7",
+]
+
+[dependency-groups]
+dev = [
+    "jinja2>=3.1.6",
+    "pytest",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
